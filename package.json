@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-kaho",
+  "version": "1.0.0",
+  "description": "ESlint config for Kaho",
+  "author": "kahosan <kahosan@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@antfu/eslint-config-basic": "^0.25.2",
+    "@antfu/eslint-config-react": "^0.25.2",
+    "@antfu/eslint-config-ts": "^0.25.2",
+    "@antfu/eslint-config-vue": "^0.25.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
