@@ -1,3 +1,6 @@
 module.exports = {
-  extends: ['@antfu/eslint-config-ts', 'plugin:prettier/recommended'],
+  extends: ['@antfu/eslint-config-ts'],
+  rules: {
+    semi: ['error', 'always'],
+  },
 };

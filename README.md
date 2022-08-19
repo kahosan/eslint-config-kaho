@@ -43,6 +43,7 @@ pnpm add -D eslint prettier eslint-config-kaho
 ## Thanks
 
 [@antfu/eslint-config](https://github.com/antfu/eslint-config)
+[eslint-config-sukka](https://github.com/SukkaW/eslint-config-sukka)
 
 ## License
 
