@@ -5,3 +5,10 @@ if (a) {
 } else {
   console.log(a);
 }
+
+if (a) { console.log(a); }
+
+const b = {
+  a,
+  sd: 2
+};

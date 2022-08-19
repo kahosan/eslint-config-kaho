@@ -3,6 +3,7 @@ module.exports = {
   rules: {
     'semi': ['error', 'always'],
     'curly': ['error', 'multi-line'],
-    'brace-style': ['error', '1tbs'],
-  },
+    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+    'comma-dangle': ['error', 'never']
+  }
 };
