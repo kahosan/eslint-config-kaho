@@ -1,3 +1,7 @@
 const a = 'asd';
 
-if (a) { return a; }
+if (a) {
+  console.log(' ');
+} else {
+  console.log(a);
+}
