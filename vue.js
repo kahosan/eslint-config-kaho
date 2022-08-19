@@ -1,3 +1,6 @@
 module.exports = {
-  extends: ['@antfu/eslint-config-vue', 'plugin:prettier/recommended'],
+  extends: ['@antfu/eslint-config-vue'],
+  rules: {
+    semi: ['error', 'always'],
+  },
 };
