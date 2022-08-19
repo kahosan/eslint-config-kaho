@@ -3,3 +3,7 @@ const a = {
 };
 
 const f = v => v;
+
+if (a) {
+  console.log(a);
+}
