@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['@antfu/eslint-config-ts'],
   rules: {
-    semi: ['error', 'always'],
+    '@typescript-eslint/semi': ['error', 'always'],
   },
 };

@@ -1,11 +1,12 @@
 {
   "name": "eslint-config-kaho",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "ESlint config for Kaho",
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "pub": "npm publish"
   },
   "dependencies": {
     "@antfu/eslint-config-basic": "^0.25.2",
