@@ -11,5 +11,9 @@ module.exports = {
       'as-needed',
       { keywords: false, unnecessary: true, numbers: false }
     ],
+    '@typescript-eslint/consistent-type-imports': [
+      'warn',
+      { prefer: 'type-imports', disallowTypeAnnotations: true }
+    ]
   }
 };
