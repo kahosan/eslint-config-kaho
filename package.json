@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kaho",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "ESlint config for Kaho",
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
@@ -9,13 +9,14 @@
     "pub": "npm publish"
   },
   "dependencies": {
-    "@antfu/eslint-config-basic": "^0.25.2",
     "@antfu/eslint-config-ts": "^0.25.2",
     "@antfu/eslint-config-vue": "^0.25.2",
     "eslint-config-sukka": "^1.6.16",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.8",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0"
   },
   "devDependencies": {
     "eslint": "^8.23.1",

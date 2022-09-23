@@ -1,5 +1,5 @@
 const a = {
-  asdasd: 'asd',
+  asdasd: 'asd'
 };
 
 const f = v => v;
