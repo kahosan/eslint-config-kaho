@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "pub": "npm publish"
+    "pub": "git push && npm version minor && npm publish"
   },
   "dependencies": {
     "@antfu/eslint-config-vue": "^0.25.2",
