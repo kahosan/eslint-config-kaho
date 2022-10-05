@@ -9,3 +9,5 @@ if (a) {
 } else {
   console.log(' ');
 }
+
+if (a) { console.log(a); }

@@ -5,11 +5,15 @@ const obj = {
   ds: 2
 };
 
+const v = `${a}/${obj.ds}`;
+
 if (a) {
   console.log(' ');
 } else {
   console.log(a);
 }
+
+if (a) console.log(a);
 
 if (a) { console.log(a); }
 
