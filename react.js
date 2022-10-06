@@ -1,3 +1,6 @@
 module.exports = {
-  extends: ['sukka/react']
+  extends: ['sukka/react'],
+  rules: {
+    'no-nested-ternary': 'off'
+  }
 };
