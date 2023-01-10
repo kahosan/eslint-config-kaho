@@ -14,6 +14,7 @@ module.exports = {
     '@typescript-eslint/consistent-type-imports': [
       'warn',
       { prefer: 'type-imports', disallowTypeAnnotations: true }
-    ]
+    ],
+    'no-console': ['error', { allow: ['warn', 'error', 'info'] }]
   }
 };
