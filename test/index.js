@@ -4,8 +4,7 @@ const a = {
 
 const f = v => v;
 
-if (a) {
+if (a)
   console.log(a);
-} else {
+else
   console.log(' ');
-}

@@ -5,13 +5,17 @@ const obj = {
   ds: 2
 };
 
-if (a) {
+if (a)
   console.log(' ');
-} else {
+else
   console.log(a);
-}
 
-if (a) { console.log(a); }
+if (a) {
+  // info
+  console.info('');
+} else {
+  console.info();
+}
 
 const b = {
   a,
