@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "./ts.js"
+  ],
+  "ignorePatterns": [
+    "node_modules",
+    "index.js",
+    "legacy.js",
+    "react.js",
+    "ts.js",
+    "vue.js"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}

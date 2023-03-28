@@ -1,9 +1,6 @@
 const a = 'asd';
 
-const obj = {
-  s: 1,
-  ds: 2
-};
+const obj = { s: 1, ds: 2 };
 
 if (a)
   console.log(' ');

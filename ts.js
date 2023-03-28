@@ -1,19 +1,20 @@
 module.exports = {
-  extends: ['@antfu/eslint-config-ts'],
+  extends: ['sukka/typescript'],
   rules: {
-    '@typescript-eslint/semi': ['error', 'always'],
-    curly: ['error', 'multi-or-nest', 'consistent'],
-    '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: true }],
-    '@typescript-eslint/comma-dangle': ['error', 'never'],
-    'quote-props': [
+    '@typescript-eslint/ban-types': [ 'error', {
+        'types': {
+          '{}': false
+        },
+        'extendDefaults': true
+      }
+    ],
+    'curly': [
       'error',
-      'as-needed',
-      { keywords: false, unnecessary: true, numbers: false }
+      'multi-or-nest',
+      'consistent'
     ],
-    '@typescript-eslint/consistent-type-imports': [
-      'warn',
-      { prefer: 'type-imports', disallowTypeAnnotations: true }
-    ],
-    'no-console': ['error', { allow: ['warn', 'error', 'info'] }]
+    '@fluffyfox/no-default-error': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-console': ['error', { 'allow': ['warn', 'error', 'info'] }]
   }
 };

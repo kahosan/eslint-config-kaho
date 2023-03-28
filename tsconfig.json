@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "jsx": "preserve",
+    "allowJs": true
+  },
+  "include": ["test/*.ts", "test/*.tsx", "test/*.js"],
+  "exclude": [
+    "node_modules",
+    "index.js",
+    "legacy.js",
+    "react.js",
+    "ts.js",
+    "vue.js"
+  ]
+}
