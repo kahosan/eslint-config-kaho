@@ -15,6 +15,8 @@ module.exports = {
     ],
     '@fluffyfox/no-default-error': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    'no-console': ['error', { 'allow': ['warn', 'error', 'info'] }]
+    'no-console': ['error', { 'allow': ['warn', 'error', 'info'] }],
+    'object-curly-spacing': 'off',
+    '@typescript-eslint/object-curly-spacing': ['error', 'always'],
   }
 };
