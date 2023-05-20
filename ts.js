@@ -1,12 +1,12 @@
 module.exports = {
   extends: ['sukka/typescript'],
   rules: {
-    '@typescript-eslint/ban-types': [ 'error', {
-        'types': {
-          '{}': false
-        },
-        'extendDefaults': true
-      }
+    '@typescript-eslint/ban-types': ['error', {
+      'types': {
+        '{}': false
+      },
+      'extendDefaults': true
+    }
     ],
     'curly': [
       'error',
@@ -18,5 +18,18 @@ module.exports = {
     'no-console': ['error', { 'allow': ['warn', 'error', 'info'] }],
     'object-curly-spacing': 'off',
     '@typescript-eslint/object-curly-spacing': ['error', 'always'],
-  }
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": false
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        }
+      }
+    ]
+  },
 };
