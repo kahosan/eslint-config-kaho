@@ -19,4 +19,9 @@ const b = {
   sd: 2
 };
 
+// t : stirng
+function test(t: string) {
+  return t;
+}
+
 export {};
