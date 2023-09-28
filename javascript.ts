@@ -19,6 +19,11 @@ export const javascript = (options?: OptionsJavaScript): FlatESLintConfigItem[] 
         },
         extendDefaults: true
       }],
+      curly: [
+        'error',
+        'multi-or-nest',
+        'consistent'
+      ],
       'no-console': 'warn'
     }
   }
