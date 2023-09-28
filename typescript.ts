@@ -19,6 +19,11 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
         },
         extendDefaults: true
       }],
+      curly: [
+        'error',
+        'multi-or-nest',
+        'consistent'
+      ],
       'no-console': 'warn'
     }
   }
