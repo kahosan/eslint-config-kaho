@@ -3,41 +3,25 @@
 ## Installation
 
 ```bash
-pnpm add -D eslint prettier eslint-config-kaho
+pnpm add -D eslint eslint-config-kaho
 ```
 
 ## Usage
 
-### Normal Project for Javascript
+### JavaScript, TypeScript, React
 
-```json
-{
-  "extends": "kaho"
-}
+```js
+const { kaho } = require('eslint-config-kaho')
+
+module.exports = kaho({ ts: { tsconfigPath: '<your path>' } })
 ```
 
-### Typescript
+### Vue
 
-```json
-{
-  "extends": "kaho/ts"
-}
-```
+```js
+const { vue } = require('eslint-config-kaho')
 
-### react
-
-```json
-{
-  "extends": "kaho/react"
-}
-```
-
-### vue
-
-```json
-{
-  "extends": "kaho/vue"
-}
+module.exports = vue()
 ```
 
 ## Thanks
