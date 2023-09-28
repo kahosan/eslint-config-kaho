@@ -10,7 +10,8 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
   {
     files: [
       constants.GLOB_TS,
-      constants.GLOB_TSX
+      constants.GLOB_TSX,
+      ...(options.componentExtentions?.map(ext => `**/*.${ext}`) ?? [])
     ],
     rules: {
       '@typescript-eslint/ban-types': ['error', {

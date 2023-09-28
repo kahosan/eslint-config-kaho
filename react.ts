@@ -9,8 +9,10 @@ export const react = (options?: OptionsReact): FlatESLintConfigItem[] => [
   ...sukka(options),
   {
     files: [
-      constants.GLOB_JSX,
-      constants.GLOB_TSX
+      constants.GLOB_TS,
+      constants.GLOB_TSX,
+      constants.GLOB_JS,
+      constants.GLOB_JSX
     ],
     rules: {}
   }
