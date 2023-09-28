@@ -34,13 +34,10 @@ export const kaho = (options: DefaultOptions) => {
 
   eslintFlatConfigs.push(...ignores(), ...javascript(options.js), ...typescript(options.ts));
 
-  if (typeof options.react === 'object') {
+  if (typeof options.react === 'object')
     eslintFlatConfigs.push(...react(options.react));
-  } else if (options.react !== false) {
+  else if (options.react !== false)
     eslintFlatConfigs.push(...react());
-  }
 
   return eslintFlatConfigs;
 };
-
-export default kaho;

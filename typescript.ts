@@ -25,6 +25,8 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
         'multi-or-nest',
         'consistent'
       ],
+      // https://eslint.style/rules/js/nonblock-statement-body-position
+      '@stylistic/js/nonblock-statement-body-position': 'off',
       'no-undef': 'off',
       'no-console': 'warn'
     }

@@ -24,6 +24,8 @@ export const javascript = (options?: OptionsJavaScript): FlatESLintConfigItem[] 
         'multi-or-nest',
         'consistent'
       ],
+      // https://eslint.style/rules/js/nonblock-statement-body-position
+      '@stylistic/js/nonblock-statement-body-position': 'off',
       'no-console': 'warn'
     }
   }
