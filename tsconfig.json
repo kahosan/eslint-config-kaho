@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
-    "strictNullChecks": true,
-    "module": "commonjs",
-    "jsx": "preserve",
-    "allowJs": true
+    "target": "es2020",
+    "module": "es2020",
+    "strict": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true
   },
-  "include": ["test/*.ts", "test/*.tsx", "test/*.js"],
+  "include": [
+    "./*.ts"
+  ],
   "exclude": [
-    "node_modules",
-    "index.js",
-    "legacy.js",
-    "react.js",
-    "ts.js",
-    "vue.js"
+    "./dist/**/*",
+    "node_modules"
   ]
 }
