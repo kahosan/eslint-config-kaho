@@ -27,6 +27,11 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
       ],
       // https://eslint.style/rules/js/nonblock-statement-body-position
       '@stylistic/js/nonblock-statement-body-position': 'off',
+      // https://eslint.style/rules/ts/member-delimiter-style
+      '@stylistic/ts/member-delimiter-style': ['error', {
+        multiline: { delimiter: 'none' },
+        singleline: { delimiter: 'comma', requireLast: false }
+      }],
       'no-undef': 'off',
       'no-console': 'warn'
     }
