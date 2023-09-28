@@ -24,6 +24,7 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
         'multi-or-nest',
         'consistent'
       ],
+      'no-undef': 'off',
       'no-console': 'warn'
     }
   }
