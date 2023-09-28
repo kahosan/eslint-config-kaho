@@ -32,7 +32,7 @@ export interface DefaultOptions {
 export const kaho = (options: DefaultOptions) => {
   const eslintFlatConfigs: FlatESLintConfigItem[] = [];
 
-  eslintFlatConfigs.push(...typescript(options.ts), ...javascript(options.js), ...ignores());
+  eslintFlatConfigs.push(...ignores(), ...javascript(options.js), ...typescript(options.ts));
 
   if (typeof options.react === 'object') {
     eslintFlatConfigs.push(...react(options.react));
