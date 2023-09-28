@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kaho",
-  "version": "2.0.0-beta.6",
+  "version": "2.0.0-beta.7",
   "description": "ESlint config for Kaho",
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
@@ -32,8 +32,7 @@
   "scripts": {
     "build": "tsup index.ts --format esm,cjs --clean --dts",
     "lint": "eslint --format=sukka .",
-    "publish": "pnpm publish",
-    "prepublish": "pnpm run build"
+    "release": "bumpp && pnpm run build && pnpm publish"
   },
   "dependencies": {
     "@antfu/eslint-config": "1.0.0-beta.13",
