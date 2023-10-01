@@ -1,4 +1,4 @@
-import type { FlatESLintConfigItem } from 'eslint-define-config';
+import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 
 import { react as sukka } from '@eslint-sukka/react';
 import type { OptionsReact } from '@eslint-sukka/react';

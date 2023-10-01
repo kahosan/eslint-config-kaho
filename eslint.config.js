@@ -1,8 +1,4 @@
-'use strict';
+// eslint-disable-next-line import/no-unresolved -- local
+import { kaho } from 'eslint-config-kaho';
 
-const { kaho, node } = require('./dist/index');
-
-module.exports = [
-  ...kaho({ react: false, ts: { tsconfigPath: './tsconfig.json' } }),
-  ...node()
-];
+export default kaho({ ts: { tsconfigPath: './tsconfig.json' } });

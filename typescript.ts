@@ -1,4 +1,4 @@
-import type { FlatESLintConfigItem } from 'eslint-define-config';
+import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 
 import { typescript as sukka } from '@eslint-sukka/ts';
 import type { OptionsTypeScript } from '@eslint-sukka/ts';

@@ -1,4 +1,4 @@
-import type { FlatESLintConfigItem } from 'eslint-define-config';
+import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 
 import { typescript } from './typescript';
 import type { OptionsTypeScript } from '@eslint-sukka/ts';
@@ -9,6 +9,7 @@ import type { OptionsJavaScript } from '@eslint-sukka/js';
 import { react } from './react';
 import type { OptionsReact } from '@eslint-sukka/react';
 
+import type { OptionsIgnores } from './ignores';
 import { ignores } from './ignores';
 
 export { typescript } from './typescript';
@@ -24,19 +25,20 @@ export { legacy } from '@eslint-sukka/legacy';
 export { constants } from '@eslint-sukka/shared';
 
 export interface DefaultOptions {
-  ts: OptionsTypeScript,
-  js?: OptionsJavaScript,
+  ts: OptionsTypeScript
+  js?: OptionsJavaScript
   react?: OptionsReact | boolean
+  ignores?: OptionsIgnores
 }
 
 export const kaho = (options: DefaultOptions) => {
   const eslintFlatConfigs: FlatESLintConfigItem[] = [];
 
-  eslintFlatConfigs.push(...ignores(), ...javascript(options.js), ...typescript(options.ts));
+  eslintFlatConfigs.push(...ignores(options.ignores), ...javascript(options.js), ...typescript(options.ts));
 
   if (typeof options.react === 'object')
     eslintFlatConfigs.push(...react(options.react));
-  else if (options.react !== false)
+  else if (options.react === true)
     eslintFlatConfigs.push(...react());
 
   return eslintFlatConfigs;

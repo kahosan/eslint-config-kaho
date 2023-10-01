@@ -1,12 +1,9 @@
-// source: https://github.com/SukkaW/eslint-config-sukka/blob/master/packages/eslint-config-sukka/src/modules/ignores.ts
-
 import { constants } from '@eslint-sukka/shared';
-import type { FlatESLintConfigItem } from 'eslint-define-config';
-// eslint-disable-next-line camelcase -- ignore
+import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 import eslint_config_flat_gitignore from 'eslint-config-flat-gitignore';
 
 export interface OptionsIgnores {
-  customGlobs?: string | string[] | null | false,
+  customGlobs?: string | string[] | null | false
   gitignore?: string | string[] | boolean | null
 }
 
