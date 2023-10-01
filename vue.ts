@@ -1,7 +1,6 @@
 import { antfu } from '@antfu/eslint-config';
-import type { OptionsConfig } from '@antfu/eslint-config';
 
-export const vue = (options?: OptionsConfig) => [
+export const vue = (options?: Parameters<typeof antfu>[0]) => [
   ...antfu(options),
   {
     files: ['*.vue'],
