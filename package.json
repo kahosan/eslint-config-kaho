@@ -1,9 +1,10 @@
 {
   "name": "eslint-config-kaho",
-  "version": "2.0.0-beta.10",
+  "version": "2.0.0",
   "description": "ESlint config for Kaho",
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kahosan/eslint-config-kaho.git"
@@ -13,15 +14,15 @@
     "eslint-config",
     "kahosan"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index.cjs",
+  "module": "dist/index.cjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "default": "./dist/index.js"
+      "import": "./dist/index.cjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.cjs"
     },
     "./package.json": "./package.json"
   },
@@ -38,18 +39,18 @@
     "release": "bumpp && pnpm run build && pnpm publish"
   },
   "dependencies": {
-    "@antfu/eslint-config": "1.0.0-beta.13",
-    "@eslint-sukka/js": "4.0.0-beta.11",
-    "@eslint-sukka/legacy": "4.0.0-beta.11",
-    "@eslint-sukka/node": "4.0.0-beta.11",
-    "@eslint-sukka/react": "4.0.0-beta.11",
-    "@eslint-sukka/shared": "4.0.0-beta.11",
-    "@eslint-sukka/ts": "4.0.0-beta.11",
-    "eslint-formatter-sukka": "4.0.0-beta.11"
+    "@antfu/eslint-config": "1.0.0-beta.18",
+    "@eslint-sukka/js": "^4.0.1",
+    "@eslint-sukka/legacy": "^4.0.1",
+    "@eslint-sukka/node": "^4.0.1",
+    "@eslint-sukka/react": "^4.0.1",
+    "@eslint-sukka/shared": "^4.0.1",
+    "@eslint-sukka/ts": "^4.0.1",
+    "eslint-formatter-sukka": "^4.0.1"
   },
   "devDependencies": {
     "eslint": "^8.50.0",
-    "eslint-define-config": "^1.23.0",
+    "eslint-config-sukka": "^4.0.1",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   },
