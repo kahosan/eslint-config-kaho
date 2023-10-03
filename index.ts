@@ -27,6 +27,9 @@ export { constants } from '@eslint-sukka/shared';
 export interface DefaultOptions {
   ts: OptionsTypeScript
   js?: OptionsJavaScript
+  /**
+   * @default false
+   */
   react?: OptionsReact | boolean
   ignores?: OptionsIgnores
 }
