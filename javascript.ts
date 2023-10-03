@@ -13,12 +13,6 @@ export const javascript = (options?: OptionsJavaScript): FlatESLintConfigItem[] 
       constants.GLOB_JSX
     ],
     rules: {
-      '@typescript-eslint/ban-types': ['error', {
-        types: {
-          '{}': false
-        },
-        extendDefaults: true
-      }],
       curly: [
         'error',
         'multi-or-nest',
