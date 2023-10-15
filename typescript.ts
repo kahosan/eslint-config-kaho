@@ -14,12 +14,6 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
       ...(options.componentExtentions?.map(ext => `**/*.${ext}`) ?? [])
     ],
     rules: {
-      '@typescript-eslint/ban-types': ['error', {
-        types: {
-          '{}': false
-        },
-        extendDefaults: true
-      }],
       curly: [
         'error',
         'multi-or-nest',

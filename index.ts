@@ -41,7 +41,7 @@ export const kaho = (options: DefaultOptions) => {
 
   if (typeof options.react === 'object')
     eslintFlatConfigs.push(...react(options.react));
-  else if (options.react === true)
+  else if (options.react)
     eslintFlatConfigs.push(...react());
 
   return eslintFlatConfigs;

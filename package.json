@@ -39,37 +39,18 @@
     "release": "bumpp && pnpm run build && pnpm publish"
   },
   "dependencies": {
-    "@antfu/eslint-config": "1.0.0-beta.18",
-    "@eslint-sukka/js": "^4.0.1",
-    "@eslint-sukka/legacy": "^4.0.1",
-    "@eslint-sukka/node": "^4.0.1",
-    "@eslint-sukka/react": "^4.0.1",
-    "@eslint-sukka/shared": "^4.0.1",
-    "@eslint-sukka/ts": "^4.0.1",
-    "eslint-formatter-sukka": "^4.0.1"
+    "@antfu/eslint-config": "1.0.0-beta.27",
+    "@eslint-sukka/js": "^4.0.6",
+    "@eslint-sukka/legacy": "^4.0.6",
+    "@eslint-sukka/node": "^4.0.6",
+    "@eslint-sukka/react": "^4.0.6",
+    "@eslint-sukka/shared": "^4.0.6",
+    "@eslint-sukka/ts": "^4.0.6",
+    "eslint-formatter-sukka": "^4.0.6"
   },
   "devDependencies": {
-    "eslint": "^8.50.0",
-    "eslint-config-sukka": "^4.0.1",
+    "eslint": "^8.51.0",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
-  },
-  "pnpm": {
-    "overrides": {
-      "array-includes": "npm:@nolyfill/array-includes@latest",
-      "array.prototype.findlastindex": "npm:@nolyfill/array.prototype.findlastindex@latest",
-      "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@latest",
-      "array.prototype.flatmap": "npm:@nolyfill/array.prototype.flatmap@latest",
-      "array.prototype.tosorted": "npm:@nolyfill/array.prototype.tosorted@latest",
-      "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@latest",
-      "has": "npm:@nolyfill/has@latest",
-      "object.assign": "npm:@nolyfill/object.assign@latest",
-      "object.entries": "npm:@nolyfill/object.entries@latest",
-      "object.fromentries": "npm:@nolyfill/object.fromentries@latest",
-      "object.groupby": "npm:@nolyfill/object.groupby@latest",
-      "object.hasown": "npm:@nolyfill/object.hasown@latest",
-      "object.values": "npm:@nolyfill/object.values@latest",
-      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest"
-    }
   }
 }
