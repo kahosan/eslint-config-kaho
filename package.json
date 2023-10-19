@@ -40,13 +40,13 @@
   },
   "dependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
-    "@eslint-sukka/js": "^4.0.6",
-    "@eslint-sukka/legacy": "^4.0.6",
-    "@eslint-sukka/node": "^4.0.6",
-    "@eslint-sukka/react": "^4.0.6",
-    "@eslint-sukka/shared": "^4.0.6",
-    "@eslint-sukka/ts": "^4.0.6",
-    "eslint-formatter-sukka": "^4.0.6"
+    "@eslint-sukka/js": "^4.1.6",
+    "@eslint-sukka/legacy": "^4.1.6",
+    "@eslint-sukka/node": "^4.1.6",
+    "@eslint-sukka/react": "^4.1.6",
+    "@eslint-sukka/shared": "^4.1.6",
+    "@eslint-sukka/ts": "^4.1.6",
+    "eslint-formatter-sukka": "^4.1.6"
   },
   "devDependencies": {
     "eslint": "^8.51.0",
