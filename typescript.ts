@@ -26,6 +26,13 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
         multiline: { delimiter: 'none' },
         singleline: { delimiter: 'comma', requireLast: false }
       }],
+      // https://typescript-eslint.io/rules/restrict-template-expressions
+      '@typescript-eslint/restrict-template-expressions': ['error', {
+        allowAny: true,
+        allowNumber: true,
+        allowBoolean: true,
+        allowNullish: false
+      }],
       'no-undef': 'off',
       'no-console': 'warn'
     }
