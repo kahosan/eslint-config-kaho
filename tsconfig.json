@@ -3,6 +3,7 @@
     "target": "es2020",
     "module": "es2020",
     "strict": true,
+    "skipLibCheck": true,
     "moduleResolution": "bundler",
     "esModuleInterop": true
   },

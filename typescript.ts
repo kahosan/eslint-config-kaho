@@ -34,7 +34,8 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
         allowNullish: false
       }],
       'no-undef': 'off',
-      'no-console': 'warn'
+      'no-console': 'warn',
+      'arrow-parens': ['error', 'as-needed']
     }
   }
 ];
