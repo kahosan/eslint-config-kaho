@@ -35,21 +35,20 @@
   "homepage": "https://github.com/kahosan/eslint-config-kaho#readme",
   "scripts": {
     "build": "tsup index.ts --format esm,cjs --clean --dts",
-    "lint": "eslint --format=sukka .",
+    "lint": "eslint .",
     "release": "bumpp && pnpm run build && pnpm publish"
   },
   "dependencies": {
-    "@antfu/eslint-config": "2.7.0",
     "@eslint-sukka/js": "^5.1.2",
     "@eslint-sukka/legacy": "^5.1.2",
     "@eslint-sukka/node": "^5.1.2",
     "@eslint-sukka/react": "^5.1.2",
     "@eslint-sukka/shared": "^5.1.2",
-    "@eslint-sukka/ts": "^5.1.2",
-    "eslint-formatter-sukka": "^5.1.2"
+    "@eslint-sukka/ts": "^5.1.2"
   },
   "devDependencies": {
     "eslint": "^8.57.0",
+    "eslint-config-flat-gitignore": "^0.1.3",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   }

@@ -9,13 +9,12 @@ import type { OptionsJavaScript } from '@eslint-sukka/js';
 import { react } from './react';
 import type { OptionsReact } from '@eslint-sukka/react';
 
-import type { OptionsIgnores } from './ignores';
 import { ignores } from './ignores';
+import type { OptionsIgnores } from './ignores';
 
+export { react } from './react';
 export { typescript } from './typescript';
 export { javascript } from './javascript';
-export { react } from './react';
-export { vue } from './vue';
 
 export { ignores } from './ignores';
 
