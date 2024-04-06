@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kaho",
-  "version": "2.0.13",
+  "version": "2.0.14",
   "description": "ESlint config for Kaho",
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
