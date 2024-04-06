@@ -19,8 +19,12 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
         'multi-or-nest',
         'consistent'
       ],
+      'no-undef': 'off',
+      'no-console': 'warn',
       // https://eslint.style/rules/js/nonblock-statement-body-position
       '@stylistic/js/nonblock-statement-body-position': 'off',
+      // https://eslint.style/rules/js/arrow-parens
+      '@stylistic/js/arrow-parens': ['error', 'as-needed'],
       // https://eslint.style/rules/ts/member-delimiter-style
       '@stylistic/ts/member-delimiter-style': ['error', {
         multiline: { delimiter: 'none' },
@@ -32,10 +36,7 @@ export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] =
         allowNumber: true,
         allowBoolean: true,
         allowNullish: false
-      }],
-      'no-undef': 'off',
-      'no-console': 'warn',
-      'arrow-parens': ['error', 'as-needed']
+      }]
     }
   }
 ];

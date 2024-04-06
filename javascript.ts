@@ -20,7 +20,8 @@ export const javascript = (options?: OptionsJavaScript): FlatESLintConfigItem[] 
       ],
       // https://eslint.style/rules/js/nonblock-statement-body-position
       '@stylistic/js/nonblock-statement-body-position': 'off',
-      'arrow-parens': ['error', 'as-needed'],
+      // https://eslint.style/rules/js/arrow-parens
+      '@stylistic/js/arrow-parens': ['error', 'as-needed'],
       'no-console': 'warn'
     }
   }
