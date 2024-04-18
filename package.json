@@ -47,9 +47,9 @@
     "@eslint-sukka/ts": "^5.1.2"
   },
   "devDependencies": {
-    "eslint": "^9.0.0",
+    "eslint": "^8.57.0",
     "eslint-config-flat-gitignore": "^0.1.5",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.3.3"
   }
 }
