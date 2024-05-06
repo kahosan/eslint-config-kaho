@@ -39,18 +39,18 @@
     "release": "bumpp && pnpm run build && pnpm publish"
   },
   "dependencies": {
-    "@eslint-sukka/js": "^5.1.2",
-    "@eslint-sukka/legacy": "^5.1.2",
-    "@eslint-sukka/node": "^5.1.2",
-    "@eslint-sukka/react": "^5.1.2",
-    "@eslint-sukka/shared": "^5.1.2",
-    "@eslint-sukka/ts": "^5.1.2"
+    "@eslint-sukka/js": "^6.0.0-beta.7",
+    "@eslint-sukka/legacy": "^6.0.0-beta.7",
+    "@eslint-sukka/node": "^6.0.0-beta.7",
+    "@eslint-sukka/react": "^6.0.0-beta.7",
+    "@eslint-sukka/shared": "^6.0.0-beta.7",
+    "@eslint-sukka/ts": "^6.0.0-beta.7"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "^9.2.0",
     "eslint-config-flat-gitignore": "^0.1.5",
     "tsup": "^8.0.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
