@@ -16,14 +16,6 @@ const { kaho } = require('eslint-config-kaho')
 module.exports = kaho({ ts: { tsconfigPath: '<your path>' } })
 ```
 
-### Vue
-
-```js
-const { vue } = require('eslint-config-kaho')
-
-module.exports = vue()
-```
-
 ## Thanks
 
 [@antfu/eslint-config](https://github.com/antfu/eslint-config)
