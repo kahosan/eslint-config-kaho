@@ -2,21 +2,21 @@
   "name": "eslint-config-kaho",
   "version": "2.1.0-beta.5",
   "description": "ESlint config for Kaho",
-  "author": "kahosan <kahosan@outlook.com>",
-  "license": "MIT",
-  "type": "module",
+  "homepage": "https://github.com/kahosan/eslint-config-kaho#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kahosan/eslint-config-kaho.git"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config",
-    "kahosan"
-  ],
+  "bugs": {
+    "url": "https://github.com/kahosan/eslint-config-kaho/issues"
+  },
+  "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.cjs",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -26,21 +26,19 @@
     },
     "./package.json": "./package.json"
   },
-  "files": [
-    "dist"
-  ],
-  "bugs": {
-    "url": "https://github.com/kahosan/eslint-config-kaho/issues"
-  },
-  "homepage": "https://github.com/kahosan/eslint-config-kaho#readme",
   "scripts": {
     "build": "tsup index.ts --format esm,cjs --clean --dts",
     "lint": "eslint .",
     "release": "bumpp && pnpm run build && pnpm publish"
   },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "kahosan"
+  ],
+  "author": "kahosan <kahosan@outlook.com>",
+  "license": "MIT",
   "dependencies": {
-    "@eslint-sukka/node": "^6.1.2",
-    "@eslint-sukka/react": "^6.1.2",
     "@eslint-sukka/shared": "^6.1.2",
     "eslint-config-sukka": "^6.1.2"
   },

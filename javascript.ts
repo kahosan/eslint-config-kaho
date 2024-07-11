@@ -1,12 +1,7 @@
+import { constants } from '@eslint-sukka/shared';
 import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 
-import { javascript as sukka } from '@eslint-sukka/js';
-import type { OptionsJavaScript } from '@eslint-sukka/js';
-
-import { constants } from '@eslint-sukka/shared';
-
-export const javascript = (options?: OptionsJavaScript): FlatESLintConfigItem[] => [
-  ...sukka(options),
+export const javascript: FlatESLintConfigItem[] = [
   {
     files: [
       constants.GLOB_JS,

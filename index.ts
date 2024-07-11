@@ -1,47 +1,32 @@
-import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
+import { compatible } from './compatible';
+import type { OptionsCompatible } from './compatible';
 
-import { typescript } from './typescript';
-import type { OptionsTypeScript } from '@eslint-sukka/ts';
-
-import { javascript } from './javascript';
-import type { OptionsJavaScript } from '@eslint-sukka/js';
+import { sukka } from 'eslint-config-sukka';
+import type { ESLintSukkaOptions } from 'eslint-config-sukka';
 
 import { react } from './react';
-import type { OptionsReact } from '@eslint-sukka/react';
-
-import { ignores } from './ignores';
-import type { OptionsIgnores } from './ignores';
+import { javascript } from './javascript';
+import { typescript } from './typescript';
 
 export { react } from './react';
-export { typescript } from './typescript';
-export { javascript } from './javascript';
 
 export { ignores } from './ignores';
 
-export { node } from '@eslint-sukka/node';
-export { legacy } from '@eslint-sukka/legacy';
-
 export { constants } from '@eslint-sukka/shared';
 
-export interface DefaultOptions {
-  ts: OptionsTypeScript
-  js?: OptionsJavaScript
-  /**
-   * @default false
-   */
-  react?: OptionsReact | boolean
-  ignores?: OptionsIgnores
-}
+export type Options = ESLintSukkaOptions;
 
-export const kaho = (options: DefaultOptions) => {
-  const eslintFlatConfigs: FlatESLintConfigItem[] = [];
+/**
+ * 用自己的规则包了一层的 sukka rules
+ */
+export const kaho = (options: Options) => sukka(
+  options,
+  ...react,
+  ...javascript,
+  ...typescript(typeof options.ts !== 'boolean' ? options.ts?.componentExtentions : [])
+);
 
-  eslintFlatConfigs.push(...ignores(options.ignores), ...javascript(options.js), ...typescript(options.ts));
-
-  if (typeof options.react === 'object')
-    eslintFlatConfigs.push(...react(options.react));
-  else if (options.react)
-    eslintFlatConfigs.push(...react());
-
-  return eslintFlatConfigs;
-};
+/**
+ * 仅开启 js ts json ignores rules
+ */
+export const room1304 = (options?: OptionsCompatible) => compatible(options);

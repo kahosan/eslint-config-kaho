@@ -1,12 +1,8 @@
 import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 
-import { react as sukka } from '@eslint-sukka/react';
-import type { OptionsReact } from '@eslint-sukka/react';
-
 import { constants } from '@eslint-sukka/shared';
 
-export const react = (options?: OptionsReact): FlatESLintConfigItem[] => [
-  ...sukka(options),
+export const react: FlatESLintConfigItem[] = [
   {
     files: [
       constants.GLOB_TS,

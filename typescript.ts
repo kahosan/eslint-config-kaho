@@ -1,17 +1,13 @@
 import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 
-import { typescript as sukka } from '@eslint-sukka/ts';
-import type { OptionsTypeScript } from '@eslint-sukka/ts';
-
 import { constants } from '@eslint-sukka/shared';
 
-export const typescript = (options: OptionsTypeScript): FlatESLintConfigItem[] => [
-  ...sukka(options),
+export const typescript = (componentExtentions?: string[]): FlatESLintConfigItem[] => [
   {
     files: [
       constants.GLOB_TS,
       constants.GLOB_TSX,
-      ...(options.componentExtentions?.map(ext => `**/*.${ext}`) ?? [])
+      ...(componentExtentions?.map(ext => `**/*.${ext}`) ?? [])
     ],
     rules: {
       curly: [
