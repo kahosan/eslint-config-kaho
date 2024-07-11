@@ -16,9 +16,6 @@ export { constants } from '@eslint-sukka/shared';
 
 export type Options = ESLintSukkaOptions;
 
-/**
- * 用自己的规则包了一层的 sukka rules
- */
 export const kaho = (options: Options) => sukka(
   options,
   ...react,
@@ -26,7 +23,4 @@ export const kaho = (options: Options) => sukka(
   ...typescript(typeof options.ts !== 'boolean' ? options.ts?.componentExtentions : [])
 );
 
-/**
- * 仅开启 js ts json ignores rules
- */
 export const room1304 = (options?: OptionsCompatible) => compatible(options);
