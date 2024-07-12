@@ -10,8 +10,6 @@ import { typescript } from './typescript';
 
 export { react } from './react';
 
-export { ignores } from './ignores';
-
 export { constants } from '@eslint-sukka/shared';
 
 export type Options = ESLintSukkaOptions;
