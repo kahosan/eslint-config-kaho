@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kaho",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "ESlint config for Kaho",
   "homepage": "https://github.com/kahosan/eslint-config-kaho#readme",
   "repository": {
