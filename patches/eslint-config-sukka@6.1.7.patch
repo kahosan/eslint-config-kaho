@@ -1,8 +1,8 @@
 diff --git a/dist/index.d.ts b/dist/index.d.ts
-index 6c142d0137dcc0150d731da5769f3b11d600e032..b21244b8bb12046b2818328ac2e564c4d38faaab 100644
+index 783754d825bb188cc7dd77909018674870b149f5..3ab0280f494b1d6975518194f5da62d7f2daee3c 100644
 --- a/dist/index.d.ts
 +++ b/dist/index.d.ts
-@@ -124,4 +124,4 @@ interface ESLintSukkaOptions {
+@@ -140,4 +140,4 @@ interface ESLintSukkaOptions {
  }
  declare const sukka: (options?: ESLintSukkaOptions, ...userConfig: FlatESLintConfigItem[]) => Promise<FlatESLintConfigItem[]>;
  

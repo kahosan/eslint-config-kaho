@@ -39,17 +39,17 @@
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
   "dependencies": {
-    "@eslint-sukka/shared": "^6.1.2",
-    "eslint-config-sukka": "^6.1.2"
+    "@eslint-sukka/shared": "^6.1.7",
+    "eslint-config-sukka": "^6.1.7"
   },
   "devDependencies": {
-    "eslint": "^9.6.0",
-    "tsup": "^8.1.0",
-    "typescript": "^5.5.3"
+    "eslint": "^9.7.0",
+    "tsup": "^8.2.3",
+    "typescript": "^5.5.4"
   },
   "pnpm": {
     "patchedDependencies": {
-      "eslint-config-sukka@6.1.2": "patches/eslint-config-sukka@6.1.2.patch"
+      "eslint-config-sukka@6.1.7": "patches/eslint-config-sukka@6.1.7.patch"
     }
   }
 }
