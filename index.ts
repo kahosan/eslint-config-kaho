@@ -1,8 +1,7 @@
-import { compatible } from './compatible';
-import type { OptionsCompatible } from './compatible';
+import { compatible, componentExtentions } from './compatible';
+import type { Options } from './compatible';
 
 import { sukka } from 'eslint-config-sukka';
-import type { ESLintSukkaOptions } from 'eslint-config-sukka';
 
 import { react } from './react';
 import { javascript } from './javascript';
@@ -12,13 +11,11 @@ export { react } from './react';
 
 export { constants } from '@eslint-sukka/shared';
 
-export type Options = ESLintSukkaOptions;
-
-export const kaho = (options: Options) => sukka(
+export const kaho = (options?: Options) => sukka(
   options,
   ...react,
   ...javascript,
-  ...typescript(typeof options.ts !== 'boolean' ? options.ts?.componentExtentions : [])
+  ...typescript(componentExtentions(options))
 );
 
-export const room1304 = (options?: OptionsCompatible) => compatible(options);
+export const room1304 = (options?: Options) => compatible(options);
