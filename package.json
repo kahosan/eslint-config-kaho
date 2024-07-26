@@ -39,6 +39,7 @@
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
   "dependencies": {
+    "@eslint-sukka/node": "^6.1.7",
     "@eslint-sukka/shared": "^6.1.7",
     "eslint-config-sukka": "^6.1.7"
   },
