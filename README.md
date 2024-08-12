@@ -8,17 +8,24 @@ pnpm add -D eslint eslint-config-kaho
 
 ## Usage
 
-### JavaScript, TypeScript, React
+### JavaScript, TypeScript, React, More...
 
 ```js
-const { kaho } = require('eslint-config-kaho')
+const { kaho } = require('eslint-config-kaho');
 
-module.exports = kaho({ ts: { tsconfigPath: '<your path>' } })
+module.exports = kaho();
+```
+
+### JavaScript, TypeScript
+
+```js
+const { room1304 } = require('eslint-config-kaho');
+
+module.exports = room1304();
 ```
 
 ## Thanks
 
-[@antfu/eslint-config](https://github.com/antfu/eslint-config)
 [eslint-config-sukka](https://github.com/SukkaW/eslint-config-sukka)
 
 ## License
