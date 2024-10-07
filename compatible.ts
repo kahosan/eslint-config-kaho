@@ -5,9 +5,11 @@ import { typescript } from './typescript';
 
 export type Options = typeof sukka extends (options: infer T, ...args: any[]) => any ? T extends undefined ? never : T : never;
 
-export const componentExtentions = (options?: Options) => {
-  return typeof options?.ts === 'boolean' ? [] : options?.ts?.componentExtentions;
-};
+export const componentExtentions = (options?: Options) => (
+  typeof options?.ts === 'boolean'
+    ? []
+    : options?.ts?.componentExtentions
+);
 
 export const compatible = async (options?: Options) => {
   const ops: Options = {
