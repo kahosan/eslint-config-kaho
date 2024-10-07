@@ -13,9 +13,9 @@ export { constants } from '@eslint-sukka/shared';
 
 export const kaho = (options?: Options) => sukka(
   options,
-  ...react,
   ...javascript,
-  ...typescript(componentExtentions(options))
+  ...typescript(componentExtentions(options)),
+  ...react
 );
 
 export const room1304 = (options?: Options) => compatible(options);
