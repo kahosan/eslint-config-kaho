@@ -10,6 +10,11 @@ pnpm add -D eslint eslint-config-kaho
 
 ### JavaScript, TypeScript, React, More...
 
+```bash
+# react
+pnpm add -D @eslint-sukka/react
+```
+
 ```js
 const { kaho } = require('eslint-config-kaho');
 

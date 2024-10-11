@@ -2,6 +2,7 @@ import { sukka } from 'eslint-config-sukka';
 
 import { javascript } from './javascript';
 import { typescript } from './typescript';
+import { react } from './react';
 
 export type Options = typeof sukka extends (options: infer T, ...args: any[]) => any ? T extends undefined ? never : T : never;
 
@@ -21,5 +22,5 @@ export const compatible = async (options?: Options) => {
     ...options
   };
 
-  return sukka(ops, ...javascript, ...typescript(componentExtentions(ops)));
+  return sukka(ops, ...javascript, ...typescript(componentExtentions(ops)), ...react);
 };
