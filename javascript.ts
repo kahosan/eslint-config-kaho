@@ -17,7 +17,10 @@ export const javascript: FlatESLintConfigItem[] = [
       '@stylistic/js/nonblock-statement-body-position': 'off',
       // https://eslint.style/rules/js/arrow-parens
       '@stylistic/js/arrow-parens': ['error', 'as-needed'],
-      'no-console': 'warn'
+      'no-console': 'warn',
+      'arrow-body-style': 'off',
+      'antfu/no-top-level-await': 'off',
+      'sukka/no-chain-array-higher-order-functions': 'off'
     }
   }
 ];
