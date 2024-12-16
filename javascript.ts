@@ -20,6 +20,7 @@ export const javascript: FlatESLintConfigItem[] = [
       'no-console': 'warn',
       'arrow-body-style': 'off',
       'antfu/no-top-level-await': 'off',
+      'antfu/top-level-function': 'off',
       'sukka/no-chain-array-higher-order-functions': 'off'
     }
   }
