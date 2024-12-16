@@ -17,8 +17,9 @@ export const typescript = (componentExtentions?: string[]): FlatESLintConfigItem
       ],
       'no-undef': 'off',
       'no-console': 'warn',
-      'antfu/top-level-function': 'off',
       'arrow-body-style': 'off',
+      'antfu/top-level-function': 'off',
+      'antfu/no-top-level-await': 'off',
       // https://eslint.style/rules/js/nonblock-statement-body-position
       '@stylistic/js/nonblock-statement-body-position': 'off',
       // https://eslint.style/rules/js/arrow-parens
