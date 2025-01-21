@@ -6,13 +6,13 @@ import { react } from './react';
 
 export type Options = typeof sukka extends (options: infer T, ...args: any[]) => any ? T extends undefined ? never : T : never;
 
-export const componentExtentions = (options?: Options) => (
-  typeof options?.ts === 'boolean'
+export function componentExtentions(options?: Options) {
+  return typeof options?.ts === 'boolean'
     ? []
-    : options?.ts?.componentExtentions
-);
+    : options?.ts?.componentExtentions;
+}
 
-export const compatible = async (options?: Options) => {
+export async function compatible(options?: Options) {
   const ops: Options = {
     next: false,
     react: false,
@@ -23,4 +23,4 @@ export const compatible = async (options?: Options) => {
   };
 
   return sukka(ops, ...javascript, ...typescript(componentExtentions(ops)), ...react);
-};
+}

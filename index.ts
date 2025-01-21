@@ -11,11 +11,13 @@ export { react } from './react';
 
 export { constants } from '@eslint-sukka/shared';
 
-export const kaho = (options?: Options) => sukka(
-  options,
-  ...javascript,
-  ...typescript(componentExtentions(options)),
-  ...react
-);
+export function kaho(options?: Options) {
+  return sukka(
+    options,
+    ...javascript,
+    ...typescript(componentExtentions(options)),
+    ...react
+  );
+}
 
 export const room1304 = (options?: Options) => compatible(options);
