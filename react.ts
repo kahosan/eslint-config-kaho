@@ -10,6 +10,8 @@ export const react: FlatESLintConfigItem[] = [
       constants.GLOB_JS,
       constants.GLOB_JSX
     ],
-    rules: {}
+    rules: {
+      // https://eslint.style/rules/js/multiline-ternary
+      '@stylistic/js/multiline-ternary': ['error', 'always-multiline', { ignoreJSX: true }] }
   }
 ];
