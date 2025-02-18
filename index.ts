@@ -22,4 +22,4 @@ export function kaho(options?: Options, ...userConfig: FlatESLintConfigItem[]) {
   );
 }
 
-export const room1304 = (options?: Options) => compatible(options);
+export const room1304 = (options?: Options, ...userConfig: FlatESLintConfigItem[]) => compatible(options, ...userConfig);
