@@ -1,4 +1,5 @@
 import { sukka } from 'eslint-config-sukka';
+import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 
 import { javascript } from './javascript';
 import { typescript } from './typescript';
@@ -12,7 +13,7 @@ export function componentExtentions(options?: Options) {
     : options?.ts?.componentExtentions;
 }
 
-export async function compatible(options?: Options) {
+export async function compatible(options?: Options, ...userConfig: FlatESLintConfigItem[]) {
   const ops: Options = {
     next: false,
     react: false,
@@ -22,5 +23,5 @@ export async function compatible(options?: Options) {
     ...options
   };
 
-  return sukka(ops, ...javascript, ...typescript(componentExtentions(ops)), ...react);
+  return sukka(ops, ...javascript, ...typescript(componentExtentions(ops)), ...react, ...userConfig);
 }

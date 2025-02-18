@@ -2,6 +2,7 @@ import { compatible, componentExtentions } from './compatible';
 import type { Options } from './compatible';
 
 import { sukka } from 'eslint-config-sukka';
+import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 
 import { react } from './react';
 import { javascript } from './javascript';
@@ -11,12 +12,13 @@ export { react } from './react';
 
 export { constants } from '@eslint-sukka/shared';
 
-export function kaho(options?: Options) {
+export function kaho(options?: Options, ...userConfig: FlatESLintConfigItem[]) {
   return sukka(
     options,
     ...javascript,
     ...typescript(componentExtentions(options)),
-    ...react
+    ...react,
+    ...userConfig
   );
 }
 
