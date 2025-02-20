@@ -13,8 +13,13 @@ export { react } from './react';
 export { constants } from '@eslint-sukka/shared';
 
 export function kaho(options?: Options, ...userConfig: FlatESLintConfigItem[]) {
+  const defaultOptions: Options = {
+    yaml: false,
+    ...options
+  };
+
   return sukka(
-    options,
+    defaultOptions,
     ...javascript,
     ...typescript(componentExtentions(options)),
     ...react,

@@ -20,6 +20,7 @@ export async function compatible(options?: Options, ...userConfig: FlatESLintCon
     stylex: false,
     legacy: false,
     node: false,
+    yaml: false,
     ...options
   };
 
