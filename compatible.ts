@@ -10,7 +10,7 @@ export type Options = typeof sukka extends (options: infer T, ...args: any[]) =>
 export function componentExtentions(options?: Options) {
   return typeof options?.ts === 'boolean'
     ? []
-    : options?.ts?.componentExtentions;
+    : options?.ts?.componentExtensions;
 }
 
 export async function compatible(options?: Options, ...userConfig: FlatESLintConfigItem[]) {
