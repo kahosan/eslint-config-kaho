@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kaho",
-  "version": "3.6.2",
+  "version": "3.6.3",
   "description": "ESlint config for Kaho",
   "homepage": "https://github.com/kahosan/eslint-config-kaho#readme",
   "repository": {
@@ -37,14 +37,14 @@
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
   "dependencies": {
-    "@eslint-sukka/node": "^6.19.0",
-    "@eslint-sukka/shared": "^6.19.0",
-    "eslint-config-sukka": "^6.19.0"
+    "@eslint-sukka/node": "^6.20.0",
+    "@eslint-sukka/shared": "^6.20.0",
+    "eslint-config-sukka": "^6.20.0"
   },
   "devDependencies": {
-    "eslint": "^9.26.0",
-    "tsdown": "^0.11.1",
+    "eslint": "^9.27.0",
+    "tsdown": "^0.12.4",
     "typescript": "^5.8.3"
   },
-  "packageManager": "pnpm@10.10.0"
+  "packageManager": "pnpm@10.11.0"
 }
