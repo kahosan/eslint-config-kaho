@@ -37,14 +37,14 @@
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
   "dependencies": {
-    "@eslint-sukka/node": "^6.20.0",
-    "@eslint-sukka/shared": "^6.20.0",
-    "eslint-config-sukka": "^6.20.0"
+    "@eslint-sukka/node": "^6.22.1",
+    "@eslint-sukka/shared": "^6.22.1",
+    "eslint-config-sukka": "^6.22.1"
   },
   "devDependencies": {
-    "eslint": "^9.27.0",
-    "tsdown": "^0.12.4",
+    "eslint": "^9.28.0",
+    "tsdown": "^0.12.7",
     "typescript": "^5.8.3"
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.12.1"
 }

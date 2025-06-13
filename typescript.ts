@@ -19,12 +19,12 @@ export function typescript(componentExtentions?: string[]): FlatESLintConfigItem
         'no-undef': 'off',
         'no-console': 'warn',
         'arrow-body-style': 'off',
-        // https://eslint.style/rules/js/nonblock-statement-body-position
-        '@stylistic/js/nonblock-statement-body-position': 'off',
-        // https://eslint.style/rules/js/arrow-parens
-        '@stylistic/js/arrow-parens': ['error', 'as-needed'],
-        // https://eslint.style/rules/ts/member-delimiter-style
-        '@stylistic/ts/member-delimiter-style': ['error', {
+        // https://eslint.style/rules/nonblock-statement-body-position
+        '@stylistic/nonblock-statement-body-position': 'off',
+        // https://eslint.style/rules/arrow-parens
+        '@stylistic/arrow-parens': ['error', 'as-needed'],
+        // https://eslint.style/rules/member-delimiter-style
+        '@stylistic/member-delimiter-style': ['error', {
           multiline: { delimiter: 'none' },
           singleline: { delimiter: 'comma', requireLast: false }
         }],

@@ -13,10 +13,10 @@ export const javascript: FlatESLintConfigItem[] = [
         'multi-or-nest',
         'consistent'
       ],
-      // https://eslint.style/rules/js/nonblock-statement-body-position
-      '@stylistic/js/nonblock-statement-body-position': 'off',
-      // https://eslint.style/rules/js/arrow-parens
-      '@stylistic/js/arrow-parens': ['error', 'as-needed'],
+      // https://eslint.style/rules/nonblock-statement-body-position
+      '@stylistic/nonblock-statement-body-position': 'off',
+      // https://eslint.style/rules/arrow-parens
+      '@stylistic/arrow-parens': ['error', 'as-needed'],
       'no-console': 'warn',
       'arrow-body-style': 'off',
       'sukka/no-chain-array-higher-order-functions': 'off'
