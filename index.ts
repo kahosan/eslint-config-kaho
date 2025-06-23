@@ -1,4 +1,4 @@
-import { compatible, componentExtentions } from './compatible';
+import { compatible, componentExtensions } from './compatible';
 import type { Options } from './compatible';
 
 import { sukka } from 'eslint-config-sukka';
@@ -16,7 +16,7 @@ export function kaho(options?: Options, ...userConfig: FlatESLintConfigItem[]) {
   return sukka(
     options,
     ...javascript,
-    ...typescript(componentExtentions(options)),
+    ...typescript(componentExtensions(options)),
     ...react,
     ...userConfig
   );

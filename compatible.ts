@@ -7,7 +7,7 @@ import { react } from './react';
 
 export type Options = typeof sukka extends (options: infer T, ...args: any[]) => any ? T extends undefined ? never : T : never;
 
-export function componentExtentions(options?: Options) {
+export function componentExtensions(options?: Options) {
   return typeof options?.ts === 'boolean'
     ? []
     : options?.ts?.componentExtensions;
@@ -24,5 +24,5 @@ export async function compatible(options?: Options, ...userConfig: FlatESLintCon
     ...options
   };
 
-  return sukka(ops, ...javascript, ...typescript(componentExtentions(ops)), ...react, ...userConfig);
+  return sukka(ops, ...javascript, ...typescript(componentExtensions(ops)), ...react, ...userConfig);
 }
