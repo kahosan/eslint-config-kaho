@@ -1,25 +1,46 @@
-import { compatible, componentExtensions } from './compatible';
+import { componentExtensions } from './compatible';
 import type { Options } from './compatible';
 
 import { sukka } from 'eslint-config-sukka';
 import type { FlatESLintConfigItem } from '@eslint-sukka/shared';
 
 import { react } from './react';
+import { sorting } from './plugins';
 import { javascript } from './javascript';
 import { typescript } from './typescript';
 
 export { react } from './react';
-
 export { constants } from '@eslint-sukka/shared';
 
 export function kaho(options?: Options, ...userConfig: FlatESLintConfigItem[]) {
-  return sukka(
-    options,
+  const configs = [
     ...javascript,
     ...typescript(componentExtensions(options)),
-    ...react,
+    ...react
+  ];
+
+  if (options?.sorting)
+    configs.push(sorting);
+
+  return sukka(
+    options,
+    ...configs,
     ...userConfig
   );
 }
 
-export const room1304 = (options?: Options, ...userConfig: FlatESLintConfigItem[]) => compatible(options, ...userConfig);
+export function room1304(options?: Options, ...userConfig: FlatESLintConfigItem[]) {
+  return kaho(
+    {
+      next: false,
+      react: false,
+      stylex: false,
+      legacy: false,
+      node: false,
+      yaml: false,
+      sorting: false,
+      ...options
+    },
+    ...userConfig
+  );
+}
