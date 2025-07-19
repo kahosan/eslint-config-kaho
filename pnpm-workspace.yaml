@@ -1,5 +1,2 @@
 onlyBuiltDependencies:
   - unrs-resolver
-
-patchedDependencies:
-  eslint-plugin-react-compiler@19.1.0-rc.2: patches/eslint-plugin-react-compiler@19.1.0-rc.2.patch
