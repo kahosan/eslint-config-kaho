@@ -12,6 +12,7 @@ export const react: FlatESLintConfigItem[] = [
     ],
     rules: {
       // https://eslint.style/rules/multiline-ternary
-      '@stylistic/multiline-ternary': ['error', 'always-multiline', { ignoreJSX: true }] }
+      '@stylistic/multiline-ternary': ['error', 'always-multiline', { ignoreJSX: true }]
+    }
   }
 ];
