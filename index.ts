@@ -9,7 +9,9 @@ import { sorting } from './plugins';
 import { javascript } from './javascript';
 import { typescript } from './typescript';
 
-export { react } from './react';
+export { react };
+export * from './plugins';
+
 export { constants } from '@eslint-sukka/shared';
 
 export function kaho(options?: Options, ...userConfig: FlatESLintConfigItem[]) {
