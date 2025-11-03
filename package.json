@@ -27,7 +27,10 @@
   "scripts": {
     "build": "tsdown index.ts --format cjs --clean --dts",
     "lint": "eslint .",
-    "release": "bumpp && pnpm run build && pnpm publish"
+    "lint:fix": "eslint --fix .",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && pnpm run build && pnpm publish",
+    "postinstall": "npx simple-git-hooks"
   },
   "keywords": [
     "eslint",
@@ -37,19 +40,33 @@
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
   "dependencies": {
-    "@eslint-sukka/node": "^7.3.5",
-    "@eslint-sukka/shared": "^7.3.5",
-    "eslint-config-sukka": "^7.3.5",
+    "@eslint-sukka/node": "^8.0.2",
+    "@eslint-sukka/shared": "^8.0.2",
+    "eslint-config-sukka": "^8.0.2",
     "eslint-plugin-perfectionist": "^4.15.1"
   },
   "devDependencies": {
-    "eslint": "^9.37.0",
-    "tsdown": "^0.15.7",
+    "eslint": "^9.38.0",
+    "lint-staged": "^16.2.6",
+    "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.15.12",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "eslint": "^9.31.0",
+    "eslint": "~9.38.0",
     "typescript": "^5.8.3"
   },
-  "packageManager": "pnpm@10.18.3"
+  "packageManager": "pnpm@10.20.0",
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged && pnpm typecheck",
+    "pre-push": "pnpm lint:fix"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint"
+    ],
+    "*.json": [
+      "eslint"
+    ]
+  }
 }
