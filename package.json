@@ -29,8 +29,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "typecheck": "tsc --noEmit",
-    "release": "bumpp && pnpm run build && pnpm publish",
-    "postinstall": "npx simple-git-hooks"
+    "release": "bumpp && pnpm run build && pnpm publish"
   },
   "keywords": [
     "eslint",
