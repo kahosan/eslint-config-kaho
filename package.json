@@ -54,7 +54,7 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "eslint": ">=9.31.0 <=9.39.1",
+    "eslint": ">=9.31.0",
     "typescript": "<=5.9.3"
   },
   "packageManager": "pnpm@10.26.1",
