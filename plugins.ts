@@ -36,7 +36,7 @@ export const sorting: FlatESLintConfigItem = {
         'style',
         'unknown'
       ],
-      newlinesBetween: 'always',
+      newlinesBetween: 1,
       partitionByComment: true,
       type: 'line-length',
       order: 'asc',
