@@ -1,3 +1,6 @@
-onlyBuiltDependencies:
-  - simple-git-hooks
-  - unrs-resolver
+allowBuilds:
+  simple-git-hooks: true
+  unrs-resolver: true
+
+minimumReleaseAgeExclude:
+  - tsdown@0.22.1
