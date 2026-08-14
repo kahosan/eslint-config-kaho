@@ -39,25 +39,25 @@
   "author": "kahosan <kahosan@outlook.com>",
   "license": "MIT",
   "dependencies": {
-    "@eslint-sukka/node": "^8.10.4",
-    "@eslint-sukka/react": "^8.10.4",
-    "@eslint-sukka/shared": "^8.10.4",
-    "eslint-config-sukka": "^8.10.4",
-    "eslint-plugin-perfectionist": "^5.9.0"
+    "@eslint-sukka/node": "^9.0.1",
+    "@eslint-sukka/react": "^9.0.1",
+    "@eslint-sukka/shared": "^9.0.1",
+    "eslint-config-sukka": "^9.0.1",
+    "eslint-plugin-perfectionist": "^5.10.1"
   },
   "devDependencies": {
-    "bumpp": "^11.1.0",
-    "eslint": "^10.4.0",
-    "lint-staged": "^17.0.5",
+    "bumpp": "^12.2.1",
+    "eslint": "^10.8.1",
+    "lint-staged": "^17.3.0",
     "simple-git-hooks": "^2.13.1",
-    "tsdown": "^0.22.1",
+    "tsdown": "^0.22.14",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "eslint": ">=9.31.0",
     "typescript": "<=6.0.2"
   },
-  "packageManager": "pnpm@11.4.0",
+  "packageManager": "pnpm@11.21.0",
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged && pnpm typecheck",
     "pre-push": "pnpm lint:fix"
