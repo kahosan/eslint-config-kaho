@@ -34,7 +34,10 @@ export function typescript(componentExtentions?: string[]): FlatESLintConfigItem
           allowNumber: true,
           allowBoolean: true,
           allowNullish: false
-        }]
+        }],
+
+        'sukka/prefer-inline-export': 'off',
+        'vibe-proof/prefer-indexed-array-loop': 'off'
       }
     }
   ];
